@@ -1,0 +1,53 @@
+ILAN Exo70 Exo70_1_66 Exo70 1 66 - A bm purple
+ILAN Exo70 Exo70_67_623 Exo70 67 623 Exo70_67_623.pdb A 1 purple
+
+ILAN Exo84 Exo84_1_340 Exo84 1 340 - B bm blue
+ILAN Exo84 Exo84_341_450 Exo84 341 450 Exo84_341_450.pdb B 1 blue
+ILAN Exo84 Exo84_451_524 Exo84 451 524 - B bm blue
+ILAN Exo84 Exo84_525_753 Exo84 525 753 Exo84_525_753.pdb B 1 blue
+
+
+ILAN Sec03 Sec03_1_75 Sec03 1 75 - E bm red
+ILAN Sec03 Sec03_76_260 Sec03 76 260 Sec03_76_260.pdb E 1 red
+ILAN Sec03 Sec03_261_329 Sec03 261 329 - E bm red
+ILAN Sec03 Sec03_330_456 Sec03 330 456 Sec03_330_456.pdb E 1 red
+ILAN Sec03 Sec03_457_582 Sec03 457 582 - E bm red
+ILAN Sec03 Sec03_583_736 Sec03 583 736 Sec03_583_736.pdb E 1 red
+ILAN Sec03 Sec03_737_740 Sec03 737 740 - E 4 red
+ILAN Sec03 Sec03_741_1326 Sec03 741 1326 Sec03_741_1326.pdb E 1 red
+ILAN Sec03 Sec03_1327_1336 Sec03 1327 1336 - E 10 red
+
+ILAN Sec05 Sec05_1_194 Sec05 1 194 - F bm blue
+ILAN Sec05 Sec05_195_370 Sec05 195 370 Sec05_195_370.pdb F 1 cornflower blue
+ILAN Sec05 Sec05_371_462 Sec05 371 462 - F bm blue
+ILAN Sec05 Sec05_463_549 Sec05 463 549 Sec05_463_549.pdb F 1 cornflower blue
+ILAN Sec05 Sec05_550_619 Sec05 550 679 - F bm blue
+ILAN Sec05 Sec05_620_935 Sec05 620 935 Sec05_620_935.pdb F 1 cornflower blue
+ILAN Sec05 Sec05_936_971 Sec05 936 971 - F bm blue
+
+ILAN Sec06 Sec06_1_6 Sec06 1 6 - G 6 light gray
+ILAN Sec06 Sec06_7_220 Sec06 7 220 Sec06_7_220.pdb G 1 light gray
+ILAN Sec06 Sec06_221_234 Sec06 221 234 - G 5 light gray
+ILAN Sec06 Sec06_235_300 Sec06 235 300 Sec06_235_300.pdb G 1 light gray
+ILAN Sec06 Sec06_301_406 Sec06 301 406 - G bm light gray
+ILAN Sec06 Sec06_407_805 Sec06 407 805 Sec06_407_805.pdb G 1 light gray
+
+ILAN Sec08 Sec08_1_156 Sec08 1 156 - H bm turquoise
+ILAN Sec08 Sec08_157_229 Sec08 157 229 Sec08_157_229.pdb H 1 turquoise
+ILAN Sec08 Sec08_230_325 Sec08 230 325 - H bm turquoise
+ILAN Sec08 Sec08_326_454 Sec08 326 454 Sec08_326_454.pdb H 1 turquoise
+ILAN Sec08 Sec08_455_589 Sec08 455 589 - H bm turquoise
+ILAN Sec08 Sec08_590_997 Sec08 590 997 Sec08_590_997.pdb H 1 turquoise
+ILAN Sec08 Sec08_998_1065 Sec08 998 1065 - H bm turquoise
+
+ILAN Sec10 Sec10_1_68 Sec10 1 68 - C bm yellow
+ILAN Sec10 Sec10_69_154 Sec10 69 154 Sec10_69_154.pdb C 1 yellow
+ILAN Sec10 Sec10_155_233 Sec10 155 233 - C bm yellow
+ILAN Sec10 Sec10_234_853 Sec10 239 858 Sec10_234_853.pdb C 1 yellow
+ILAN Sec10 Sec10_854_871 Sec10 854 871 - C bm yellow
+
+ILAN Sec15 Sec15_1_59 Sec15 1 59 - D bm green
+ILAN Sec15 Sec15_60_233 Sec15 60 233 Sec15_60_233.pdb D 1 green
+ILAN Sec15 Sec15_234_483 Sec15 234 483 - D bm green
+ILAN Sec15 Sec15_484_836 Sec15 484 836 Sec15_484_836.pdb D 1 green
+ILAN Sec15 Sec15_837_910 Sec15 837 910 - D bm green
