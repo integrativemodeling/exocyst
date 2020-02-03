@@ -178,7 +178,7 @@ outputobjects.append(gem)
 # Set MC Sampling Parameters
 #--------------------------
 num_frames = 200000
-if '--test' in sys.argv: num_frames=20
+if '--test' in sys.argv: num_frames=5
 num_mc_steps = 20
 
 # This object defines all components to be sampled as well as the sampling protocol
