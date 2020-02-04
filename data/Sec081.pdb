@@ -2,9 +2,9 @@ EXPDTA    THEORETICAL MODEL, MODELLER SVN 2016/12/27 18:34:45
 REMARK   6 MODELLER OBJECTIVE FUNCTION:      1111.1957
 REMARK   6 MODELLER BEST TEMPLATE % SEQ ID:  13%
 REMARK   6 SEQUENCE: Sec08
-REMARK   6 TEMPLATE PATH Sec08 /salilab/park3/ganesans/exocyst/data/Sec08/domain1/2D2S_A.pdb
-REMARK   6 ALIGNMENT: /salilab/park3/ganesans/exocyst/data/Sec08/domain1/sec08.ali
-REMARK   6 SCRIPT: /salilab/park3/ganesans/exocyst/data/Sec08/domain1/run_mod.sh
+REMARK   6 TEMPLATE PATH Sec08 ../data/Sec08/domain1/2D2S_A.pdb
+REMARK   6 ALIGNMENT: ../data/Sec08/domain1/sec08.ali
+REMARK   6 SCRIPT: ../data/Sec08/domain1/run_mod.sh
 REMARK   6 TEMPLATE: 2D2S 530:A - 680:A MODELS 159:D - 420:D AT 13%
 ATOM      1  N   LEU D 159      -3.193  59.188  40.491  1.00 70.82           N
 ATOM      2  CA  LEU D 159      -1.773  59.139  40.078  1.00 70.82           C

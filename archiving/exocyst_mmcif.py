@@ -49,12 +49,12 @@ bs = IMP.pmi.macros.BuildSystem(m)
 
 if '--mmcif' in sys.argv:
     # Record the modeling protocol to an mmCIF file
-    po = IMP.pmi.mmcif.ProtocolOutput(open('exocyst.cif', 'w'))
+    po = IMP.pmi.mmcif.ProtocolOutput(None)
     bs.system.add_protocol_output(po)
     po.system.title = "Modeling of the yeast exocyst complex"
     # Add publication
     #po.system.citations.append(ihm.Citation.from_pubmed_id(25161197))
-    po.flush()
+    #po.flush()
 
 bs.dry_run = '--dry-run' in sys.argv
 
@@ -105,7 +105,7 @@ mols = IMP.pmi.tools.get_molecules(root_hier)
 for mol in mols:
     molname=mol.get_name()
     IMP.pmi.tools.display_bonds(mol)
-    cr = IMP.pmi.restraints.stereochemistry.ConnectivityRestraint(mol,scale=2.0)
+    cr = IMP.pmi.restraints.stereochemistry.ConnectivityRestraint(mol)
     cr.add_to_model()
     cr.set_label(molname)
     outputobjects.append(cr)
@@ -186,7 +186,6 @@ gem.set_label("EM")
 gem.add_to_model()
 outputobjects.append(gem)
 
-
 #--------------------------
 # Monte-Carlo Sampling
 #--------------------------
@@ -239,62 +238,53 @@ with open('initial.cif', 'w') as fh:
 
 print("restraint datasets:", [r.dataset for r in s.restraints])
 
-# Datasets for XL-MS restraint
 for r in s.restraints:
     if isinstance(r, ihm.restraint.CrossLinkRestraint):
         print("XL-MS dataset at:", r.dataset.location.path)
         print("Details:", r.dataset.location.details)
-# Dataset for EM restraint
 em, = [r for r in s.restraints
        if isinstance(r, ihm.restraint.EM3DRestraint)]
 d = em.dataset
 print("GMM file at", d.location.path)
 print("is derived from EMDB entry", d.parents[0].location.access_code)
 
+
 dss, edc = [r for r in s.restraints
                if isinstance(r, ihm.restraint.CrossLinkRestraint)]
 dss.linker = ihm.cross_linkers.dss
 edc.linker = ihm.cross_linkers.edc
 
-# Get last step of last protocol (protocol is an 'orphan' because
-# we haven't used it for a model yet)
 last_step = s.orphan_protocols[-1].steps[-1]
 print(last_step.num_models_end)
-# Correct number of output models to account for multiple runs
 last_step.num_models_end = 200000
 
-# Get last protocol in the file
 protocol = po.system.orphan_protocols[-1]
-# State that we filtered the 200000 frames down to one cluster of
-# 100 models:
 analysis = ihm.analysis.Analysis()
 protocol.analyses.append(analysis)
 analysis.steps.append(ihm.analysis.ClusterStep(
-                      feature='RMSD', num_models_begin=200000,
-                      num_models_end=100))
+                      feature='RMSD', num_models_begin=2000000,
+                      num_models_end=9668))
 
 mg = ihm.model.ModelGroup(name="Cluster 0")
-
 
 # Add to last state
 po.system.state_groups[-1][-1].append(mg)
 
 e = ihm.model.Ensemble(model_group=mg,
-                       num_models=9664,
+                       num_models=9668,
                        post_process=analysis.steps[-1],
-                       name="Cluster 0")
+                       name="Cluster 0",
+                       clustering_method='Density based threshold-clustering',
+                       clustering_feature='RMSD',
+                       precision='37'
+                       )
 po.system.ensembles.append(e)
 
 
 import RMF
 import IMP.rmf
 
-# Add the model from RMF (let's say it's frame 42 from the output RMF file)
-rh = RMF.open_rmf_file_read_only('output/cluster.0/cluster_center_model.rmf3')
-#IMP.rmf.link_hierarchies(rh, [root_hier])
-print ("rh",rh)
-print ("root",root_hier)
-#IMP.rmf.link_hierarchies(rh, [root_hier])
+rh = RMF.open_rmf_file_read_only('../results/models/cluster_center_model.rmf3')
 
 IMP.rmf.load_frame(rh, RMF.FrameID(0))
 del rh
@@ -304,13 +294,14 @@ print (e.model_group)
 for i in ["Sec03","Sec05","Sec06","Sec08","Sec10","Sec15","Exo70","Exo84"]: 
     prot2=i+'.0'
     asym = po.asym_units[prot2]
-    loc = ihm.location.OutputFileLocation('output/cluster.0/LPD_'+i+'.mrc')
+    loc = ihm.location.OutputFileLocation('../results/densities/LPD_'+i+'.mrc')
     den = ihm.model.LocalizationDensity(file=loc, asym_unit=asym)
     e.densities.append(den)
 
 repo = ihm.location.Repository(doi="10.5281/zenodo.2598760", root="../..",
-                  top_directory="/exocyst/",
-                  url="https://zenodo.org/record/2598760/files/XXX")
+                  top_directory="salilab-exocyst",
+                  url="https://zenodo.org/record/2598760/files/salilab/"
+                      "exocyst.zip")
 s.update_locations_in_repositories([repo])
 
 dss, edc = [r for r in s.restraints
@@ -320,8 +311,14 @@ print("XL-MS dataset now at %s/%s inside %s"
       % (d.location.repo.top_directory,
          d.location.path, d.location.repo.url))
 
+#po.system.citations.append(ihm.Citation.from_pubmed_id(25161197))
+
 po.finalize()
 with open('exocyst.cif', 'w') as fh:
     ihm.dumper.write(fh, [po.system])
 
+import ihm.reader
+with open('exocyst.cif') as fh:
+    s, = ihm.reader.read(fh)
+print(s.title, s.restraints, s.ensembles, s.state_groups)
 
