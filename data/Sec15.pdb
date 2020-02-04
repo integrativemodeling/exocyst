@@ -1,4 +1,11 @@
-CRYST1    0.000    0.000    0.000  90.00  90.00  90.00 P 1           1
+EXPDTA    THEORETICAL MODEL, MODELLER SVN 2016/12/27 18:34:45
+REMARK   6 MODELLER OBJECTIVE FUNCTION:      1111.1957
+REMARK   6 MODELLER BEST TEMPLATE % SEQ ID:  14%
+REMARK   6 SEQUENCE: Sec15
+REMARK   6 TEMPLATE PATH Sec15 /salilab/park3/ganesans/exocyst/data/Sec15/3FHN_B.pdb
+REMARK   6 ALIGNMENT: /salilab/park3/ganesans/exocyst/data/Sec15/sec15.ali
+REMARK   6 SCRIPT: /salilab/park3/ganesans/exocyst/data/Sec15/run_mod.sh
+REMARK   6 TEMPLATE: 3FHN 114:B - 835:B MODELS 474:F - 769:F AT 14%
 ATOM      1  N   ASN F 474      30.418  43.805  90.320  1.00 71.33           N
 ATOM      2  CA  ASN F 474      29.731  44.656  89.326  1.00 71.33           C
 ATOM      3  CB  ASN F 474      30.310  44.420  87.917  1.00 71.33           C
