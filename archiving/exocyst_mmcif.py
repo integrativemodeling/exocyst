@@ -271,12 +271,12 @@ mg = ihm.model.ModelGroup(name="Cluster 0")
 po.system.state_groups[-1][-1].append(mg)
 
 e = ihm.model.Ensemble(model_group=mg,
-                       num_models=9668,
+                       num_models=9669,
                        post_process=analysis.steps[-1],
                        name="Cluster 0",
-                       clustering_method='Density based threshold-clustering',
+                       clustering_method='Other',
                        clustering_feature='RMSD',
-                       precision='37'
+                       precision='38'
                        )
 po.system.ensembles.append(e)
 
@@ -298,9 +298,9 @@ for i in ["Sec03","Sec05","Sec06","Sec08","Sec10","Sec15","Exo70","Exo84"]:
     den = ihm.model.LocalizationDensity(file=loc, asym_unit=asym)
     e.densities.append(den)
 
-repo = ihm.location.Repository(doi="10.5281/zenodo.2598760", root="../..",
+repo = ihm.location.Repository(doi="10.5281/zenodo.3637567", root="../..",
                   top_directory="salilab-exocyst",
-                  url="https://zenodo.org/record/2598760/files/salilab/"
+                  url="https://zenodo.org/record/3637567/files/salilab/"
                       "exocyst.zip")
 s.update_locations_in_repositories([repo])
 
