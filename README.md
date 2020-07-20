@@ -8,7 +8,10 @@ The scripts work with the [IMP](http://salilab.org/imp) (Release 2.8.0).
 ## List of files and directories:
 
 - `data`   	 contains all relevant data
-- `scripts`	 contains all the modeling scripts version for the different setups. 
+- `production scripts`	 contains all the modeling scripts version for the different setups. 
+- `analysus scripts`	 contains all the analysis scripts. 
+- `archiving`	 contains the cif file and script used to generate it
+- `results`	 contains the models, centroid structure and localization densities
 
 ## Information
 
