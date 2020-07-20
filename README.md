@@ -1,5 +1,6 @@
 # Integrative Modeling of Yeast Exocyst Complex
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3951752.svg)](https://doi.org/10.5281/zenodo.3951752)
 
 These scripts demonstrate the use of [IMP](http://salilab.org/imp) in the modeling of the yeast exocyst complex using DSS and EDC datasets, and a negative-stain EM density map. 
 The scripts work with the [IMP](http://salilab.org/imp) (Release 2.8.0).
