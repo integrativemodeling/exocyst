@@ -263,7 +263,7 @@ analysis = ihm.analysis.Analysis()
 protocol.analyses.append(analysis)
 analysis.steps.append(ihm.analysis.ClusterStep(
                       feature='RMSD', num_models_begin=2000000,
-                      num_models_end=9668))
+                      num_models_end=9669))
 
 mg = ihm.model.ModelGroup(name="Cluster 0")
 
@@ -276,7 +276,7 @@ e = ihm.model.Ensemble(model_group=mg,
                        name="Cluster 0",
                        clustering_method='Other',
                        clustering_feature='RMSD',
-                       precision='38'
+                       precision='39'
                        )
 po.system.ensembles.append(e)
 
@@ -284,10 +284,9 @@ po.system.ensembles.append(e)
 import RMF
 import IMP.rmf
 
-rh = RMF.open_rmf_file_read_only('../results/models/cluster_center_model.rmf3')
-
-IMP.rmf.load_frame(rh, RMF.FrameID(0))
-del rh
+#rh = RMF.open_rmf_file_read_only('../results/models/cluster_center_model.rmf3')
+#IMP.rmf.load_frame(rh, RMF.FrameID(0))
+#del rh
 model = po.add_model(e.model_group)
 print (e.model_group)
 
@@ -298,10 +297,9 @@ for i in ["Sec03","Sec05","Sec06","Sec08","Sec10","Sec15","Exo70","Exo84"]:
     den = ihm.model.LocalizationDensity(file=loc, asym_unit=asym)
     e.densities.append(den)
 
-repo = ihm.location.Repository(doi="10.5281/zenodo.3637567", root="../..",
-                  top_directory="salilab-exocyst",
-                  url="https://zenodo.org/record/3637567/files/salilab/"
-                      "exocyst.zip")
+repo = ihm.location.Repository(doi="10.5281/zenodo.3951657", root="../",
+                  top_directory="",
+                  url="https://zenodo.org/record/3651657")
 s.update_locations_in_repositories([repo])
 
 dss, edc = [r for r in s.restraints
