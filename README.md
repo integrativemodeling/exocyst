@@ -16,5 +16,6 @@ _Author(s)_: Sai Ganesan
 
 _License_: 
 
-_Publications_:
+_Publications_: Ganesan SJ, Feyder MJ, Chemmama IE, et al. Integrative structure and function of the yeast exocyst complex. Protein Sci. 2020;29(6):1486-1501. doi:10.1002/pro.3863
+
 
