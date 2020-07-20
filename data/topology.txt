@@ -1,36 +1,102 @@
 |molecule_name|color|fasta_fn|fasta_id|pdb_fn|chain|residue_range|pdb_offset|bead_size|em_residues_per_gaussian|rigid_body|super_rigid_body|chain_of_super_rigid_bodies|
 
-|Sec03|red              |Exocyst.fasta|Sec03A|BEADS                   | |1,729      |0   |10|50|  |   | |              
-|Sec03|red              |Exocyst.fasta|Sec03A|Sec03.pdb               |A|730,1336   |0   |10|10|1 |   | | 
+|Sec03|red              |Exocyst.fasta|Sec03A|BEADS                   | |1,730      |0   |50|50|  |   | | 
+|Sec03|red              |Exocyst.fasta|Sec03A|Sec03.pdb               |A|731,884    |0   |1|1|1 |   | | 
+|Sec03|red              |Exocyst.fasta|Sec03A|BEADS                   | |885,923    |0   |50|50|  |   | | 
+|Sec03|red              |Exocyst.fasta|Sec03A|Sec03.pdb               |A|924,956    |0   |1|1|1 |   | | 
+|Sec03|red              |Exocyst.fasta|Sec03A|BEADS                   | |957,990    |0   |50|50|  |   | | 
+|Sec03|red              |Exocyst.fasta|Sec03A|Sec03.pdb               |A|991,1137   |0   |1|1|1 |   | | 
+|Sec03|red              |Exocyst.fasta|Sec03A|BEADS                   | |1138,1156  |0   |50|50|  |   | | 
+|Sec03|red              |Exocyst.fasta|Sec03A|Sec03.pdb               |A|1157,1223  |0   |1|1|1 |   | | 
+|Sec03|red              |Exocyst.fasta|Sec03A|BEADS                   | |1224,1241  |0   |50|50|  |   | | 
+|Sec03|red              |Exocyst.fasta|Sec03A|Sec03.pdb               |A|1242,1333  |0   |1|1|1 |   | | 
+|Sec03|red              |Exocyst.fasta|Sec03A|BEADS                   | |1334,1336  |0   |50|50|  |   | | 
 
-|Sec05|blue             |Exocyst.fasta|Sec05B|BEADS                   | |1,231      |0   |10|50|  |   | |
-|Sec05|blue             |Exocyst.fasta|Sec05B|Sec051.pdb               |B|232,555    |0   |10|10|2 |   | |
-|Sec05|blue             |Exocyst.fasta|Sec05B|BEADS                   | |556,625    |0   |10|50|  |   | |
-|Sec05|blue             |Exocyst.fasta|Sec05B|Sec052.pdb               |B|626,971    |0   |10|10|3 |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|BEADS                   | |1,231      |0   |50|50|  |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|Sec051.pdb              |B|232,327    |0   |1|10|2 |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|BEADS                   | |328,349    |0   |50|50|  |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|Sec051.pdb              |B|350,371    |0   |1|10|2 |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|BEADS                   | |372,456    |0   |50|50|  |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|Sec051.pdb              |B|457,501    |0   |1|10|2 |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|BEADS                   | |502,528    |0   |50|50|  |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|Sec051.pdb              |B|529,556    |0   |1|10|2 |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|BEADS                   | |557,626    |0   |50|50|  |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|Sec052.pdb              |B|627,658    |0   |1|10|2 |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|BEADS                   | |659,685    |0   |50|50|  |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|Sec052.pdb              |B|686,786    |0   |1|10|2 |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|BEADS                   | |787,805    |0   |50|50|  |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|Sec052.pdb              |B|806,921    |0   |1|10|2 |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|BEADS                   | |922,944    |0   |50|50|  |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|Sec052.pdb              |B|945,957    |0   |1|10|2 |   | |
+|Sec05|blue             |Exocyst.fasta|Sec05B|BEADS                   | |958,971    |0   |50|50|  |   | |
 
-|Sec06|green            |Exocyst.fasta|Sec06C|BEADS                   | |1,410      |0   |10|50|  |   | |
-|Sec06|green            |Exocyst.fasta|Sec06C|Sec061.pdb               |C|411,805    |0   |10|10|4 |   | |
+|Sec06|green            |Exocyst.fasta|Sec06C|BEADS                   | |1,410      |0   |50|50|  |   | |
+|Sec06|green            |Exocyst.fasta|Sec06C|Sec061.pdb              |C|411,805    |0   |1|10|3 |   | |
 
-|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |1,158      |0   |10|50|  |   | |
-|Sec08|pink             |Exocyst.fasta|Sec08D|Sec081.pdb               |D|159,419    |0   |10|10|5 |   | |
-|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |420,548    |0   |10|50|  |   | |
-|Sec08|pink             |Exocyst.fasta|Sec08D|Sec082.pdb               |D|549,971    |0   |10|10|6 |   | |
-|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |972,1065   |0   |10|50|  |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |1,158      |0   |50|50|  |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|Sec081.pdb              |D|159,230    |0   |1|10|4 |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |231,325    |0   |50|50|  |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|Sec081.pdb              |D|326,361    |0   |1|10|4 |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |362,392    |0   |50|50|  |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|Sec081.pdb              |D|393,420    |0   |1|10|4 |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |421,548    |0   |50|50|  |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|Sec082.pdb              |D|549,570    |0   |1|10|5 |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |571,587    |0   |50|50|  |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|Sec082.pdb              |D|588,610    |0   |1|10|5 |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |611,630    |0   |50|50|  |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|Sec082.pdb              |D|631,648    |0   |1|10|5 |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |649,659    |0   |50|50|  |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|Sec082.pdb              |D|660,672    |0   |1|10|5 |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |673,689    |0   |50|50|  |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|Sec082.pdb              |D|690,698    |0   |1|10|5 |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |699,744    |0   |50|50|  |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|Sec082.pdb              |D|745,772    |0   |1|10|5 |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |773,824    |0   |50|50|  |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|Sec082.pdb              |D|825,972    |0   |1|10|5 |   | |
+|Sec08|pink             |Exocyst.fasta|Sec08D|BEADS                   | |973,1065   |0   |50|50|  |   | |
+
+|Sec10|yellow           |Exocyst.fasta|Sec10E|BEADS                   | |1,229      |0   |50|50|  |   | |
+|Sec10|yellow           |Exocyst.fasta|Sec10E|Sec10.pdb               |E|230,280    |0   |1|10|6 |   | |
+|Sec10|yellow           |Exocyst.fasta|Sec10E|BEADS                   | |281,318    |0   |50|50|  |   | |
+|Sec10|yellow           |Exocyst.fasta|Sec10E|Sec10.pdb               |E|319,399    |0   |1|10|6 |   | |
+|Sec10|yellow           |Exocyst.fasta|Sec10E|BEADS                   | |400,413    |0   |50|50|  |   | |
+|Sec10|yellow           |Exocyst.fasta|Sec10E|Sec10.pdb               |E|414,460    |0   |1|10|6 |   | |
+|Sec10|yellow           |Exocyst.fasta|Sec10E|BEADS                   | |461,567    |0   |50|50|  |   | |
+|Sec10|yellow           |Exocyst.fasta|Sec10E|Sec10.pdb               |E|568,624    |0   |1|10|6 |   | |
+|Sec10|yellow           |Exocyst.fasta|Sec10E|BEADS                   | |625,638    |0   |50|50|  |   | |
+|Sec10|yellow           |Exocyst.fasta|Sec10E|Sec10.pdb               |E|639,864    |0   |1|10|6 |   | |
+|Sec10|yellow           |Exocyst.fasta|Sec10E|BEADS                   | |865,871    |0   |50|50|  |   | |
+
+|Sec15|magenta          |Exocyst.fasta|Sec15F|BEADS                   | |1,473      |0   |50|50|  |   | |
+|Sec15|magenta          |Exocyst.fasta|Sec15F|Sec15.pdb               |F|474,525    |0   |1|10|7 |   | |
+|Sec15|magenta          |Exocyst.fasta|Sec15F|BEADS                   | |526,565    |0   |50|50|  |   | |
+|Sec15|magenta          |Exocyst.fasta|Sec15F|Sec15.pdb               |F|566,639    |0   |1|10|7 |   | |
+|Sec15|magenta          |Exocyst.fasta|Sec15F|BEADS                   | |640,662    |0   |50|50|  |   | |
+|Sec15|magenta          |Exocyst.fasta|Sec15F|Sec15.pdb               |F|663,685    |0   |1|10|7 |   | |
+|Sec15|magenta          |Exocyst.fasta|Sec15F|BEADS                   | |686,702    |0   |50|50|  |   | |
+|Sec15|magenta          |Exocyst.fasta|Sec15F|Sec15.pdb               |F|703,769    |0   |1|10|7 |   | |
+|Sec15|magenta          |Exocyst.fasta|Sec15F|BEADS                   | |770,910    |0   |50|50|  |   | |
+
+|Exo70|brown            |Exocyst.fasta|Exo70G|BEADS                   | |1,66       |0   |50|50|  |   | |
+|Exo70|brown            |Exocyst.fasta|Exo70G|Exo701.pdb              |G|67,116     |0   |1|10|8 |   | |
+|Exo70|brown            |Exocyst.fasta|Exo70G|BEADS                   | |117,120    |0   |50|50|  |   | |
+|Exo70|brown            |Exocyst.fasta|Exo70G|Exo701.pdb              |G|121,221    |0   |1|10|8 |   | |
+|Exo70|brown            |Exocyst.fasta|Exo70G|BEADS                   | |222,233    |0   |50|50|  |   | |
+|Exo70|brown            |Exocyst.fasta|Exo70G|Exo701.pdb              |G|234,295    |0   |1|10|8 |   | |
+|Exo70|brown            |Exocyst.fasta|Exo70G|BEADS                   | |296,300    |0   |50|50|  |   | |
+|Exo70|brown            |Exocyst.fasta|Exo70G|Exo701.pdb              |G|301,414    |0   |1|10|8 |   | |
+|Exo70|brown            |Exocyst.fasta|Exo70G|BEADS                   | |415,418    |0   |50|50|  |   | |
+|Exo70|brown            |Exocyst.fasta|Exo70G|Exo701.pdb              |G|419,624    |0   |1|10|8 |   | |
+
+|Exo84|orange           |Exocyst.fasta|Exo84H|BEADS                   | |1,343      |0   |50|50|  |   | |
+|Exo84|orange           |Exocyst.fasta|Exo84H|Exo841.pdb              |H|344,451    |0   |1|10|9 |   | |
+|Exo84|orange           |Exocyst.fasta|Exo84H|BEADS                   | |452,524    |0   |50|50|  |   | |
+|Exo84|orange           |Exocyst.fasta|Exo84H|Exo842.pdb              |H|525,570    |0   |1|10|9 |   | |
+|Exo84|orange           |Exocyst.fasta|Exo84H|BEADS                   | |571,577    |0   |50|50|  |   | |
+|Exo84|orange           |Exocyst.fasta|Exo84H|Exo842.pdb              |H|578,647    |0   |1|10|9 |   | |
+|Exo84|orange           |Exocyst.fasta|Exo84H|BEADS                   | |648,649    |0   |50|50|  |   | |
+|Exo84|orange           |Exocyst.fasta|Exo84H|Exo842.pdb              |H|650,711    |0   |1|10|9 |   | |
+|Exo84|orange           |Exocyst.fasta|Exo84H|BEADS                   | |712,714    |0   |50|50|  |   | |
+|Exo84|orange           |Exocyst.fasta|Exo84H|Exo842.pdb              |H|715,753    |0   |1|10|9 |   | |
 
 
-|Sec10|yellow           |Exocyst.fasta|Sec10E|BEADS                   | |1,229      |0   |10|50|  |   | |
-|Sec10|yellow           |Exocyst.fasta|Sec10E|Sec10.pdb               |E|230,871    |0   |10|10|7 |   | |
-
-|Sec15|magenta          |Exocyst.fasta|Sec15F|BEADS                   | |1,473      |0   |10|50|  |   | |
-|Sec15|magenta          |Exocyst.fasta|Sec15F|Sec15.pdb               |F|474,512    |0   |10|10|8 |   | |
-|Sec15|magenta          |Exocyst.fasta|Sec15F|Sec15.pdb               |F|513,768    |0   |10|10|9 |   | |
-|Sec15|magenta          |Exocyst.fasta|Sec15F|BEADS                   | |769,910    |0   |10|10|  |   | |
-
-
-|Exo70|brown            |Exocyst.fasta|Exo70G|BEADS                   | |1,66       |0   |10|50|  |   | |
-|Exo70|brown            |Exocyst.fasta|Exo70G|Exo701.pdb               |G|67,623     |0   |10|10|10|   | |
-
-|Exo84|orange           |Exocyst.fasta|Exo84H|BEADS                   | |1,342      |0   |10|50|  |   | |
-|Exo84|orange           |Exocyst.fasta|Exo84H|Exo841.pdb              |H|343,451    |0   |10|10|11|   | |
-|Exo84|orange           |Exocyst.fasta|Exo84H|BEADS                   | |452,524    |0   |10|50|  |   | |
-|Exo84|orange           |Exocyst.fasta|Exo84H|Exo842.pdb              |H|525,753    |0   |10|10|11|   | |
