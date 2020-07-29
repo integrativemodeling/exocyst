@@ -1,4 +1,4 @@
-title: Integrative Modeling of Yeast Exocyst Complex
+title: Exocyst Complex
 tags: [chemical crosslinks, EM density map, PMI]
 prereqs: [python/numpy]
 accessions: [PDBDEV_00000041]
