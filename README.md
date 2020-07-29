@@ -18,8 +18,8 @@ The scripts work with the [IMP](http://salilab.org/imp) (Release 2.8.0).
 
 _Author(s)_: Sai Ganesan
 
-_License_: 
+_License_: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+International License.
 
 _Publications_: Ganesan SJ, Feyder MJ, Chemmama IE, et al. Integrative structure and function of the yeast exocyst complex. Protein Sci. 2020;29(6):1486-1501. doi:10.1002/pro.3863
-
-
