@@ -243,9 +243,9 @@ for state in h1.get_children():
 del h1
 
 for state in root_hier.get_children():
-    comp2={}
+    #comp2={}
     for component in state.get_children():
-            part2={}
+            #part2={}
             for i,leaf in enumerate(IMP.core.get_leaves(component)):
                 p=IMP.core.XYZ(leaf.get_particle())
                 if 'Residue' in p.get_name():
@@ -253,8 +253,8 @@ for state in root_hier.get_children():
                 else:
                     name=p.get_name()
                 p.set_coordinates(comp[component.get_name()][name])
-                part2[name]=p.get_coordinates()
-            comp2[component.get_name()]=part2
+                #part2[name]=p.get_coordinates()
+            #comp2[component.get_name()]=part2
 
 model = po.add_model(e.model_group)
 print (e.model_group)
