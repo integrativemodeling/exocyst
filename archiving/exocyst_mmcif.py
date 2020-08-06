@@ -259,10 +259,15 @@ for state in root_hier.get_children():
 model = po.add_model(e.model_group)
 print (e.model_group)
 
+densityrepos = ihm.location.Repository(
+    doi="10.5281/zenodo.3951752",
+    url="https://zenodo.org/record/3951752/files/Localization_density.zip")
+
 for i in ["Sec03","Sec05","Sec06","Sec08","Sec10","Sec15","Exo70","Exo84"]: 
     prot2=i+'.0'
     asym = po.asym_units[prot2]
-    loc = ihm.location.OutputFileLocation('../Localization_density/LPD_'+i+'.mrc')
+    loc = ihm.location.OutputFileLocation('Localization_density/LPD_'+i+'.mrc',
+            repo=densityrepos)
     den = ihm.model.LocalizationDensity(file=loc, asym_unit=asym)
     e.densities.append(den)
 
@@ -282,24 +287,16 @@ datarepos = ihm.location.Repository(
     top_directory="data",
     url="https://zenodo.org/record/3951752/files/data.zip")
 
-densityrepos = ihm.location.Repository(
+dcdrepos = ihm.location.Repository(
     doi="10.5281/zenodo.3951752",
-    root='../Localization_density',
-    top_directory="Localization_density",
-    url="https://zenodo.org/record/3827934/files/Localization_density.zip")
-
-dcd_location = ihm.location.OutputFileLocation(path='../cluster.0.dcd',
+    url="https://zenodo.org/record/3951752/files/cluster.0.dcd")
+dcd_location = ihm.location.OutputFileLocation(path=None, repo=dcdrepos,
                                             details="cluster ensemble")
+
 ss = ihm.model.IndependentSubsample(name='Cluster 0 subsample',num_models='9741',file=dcd_location)
 e.subsamples.append(ss)
 
-dcdrepos = ihm.location.Repository(
-    doi="10.5281/zenodo.3951752",
-    root="../cluster.0.dcd",
-    top_directory="cluster.0.dcd",
-    url="https://zenodo.org/record/3827934/files/cluster.0.dcd")
-
-po.system.update_locations_in_repositories([scriptrepos, datarepos, densityrepos, dcdrepos])
+po.system.update_locations_in_repositories([scriptrepos, datarepos])
 
 po.finalize()
 with open('exocyst.cif', 'w') as fh:
