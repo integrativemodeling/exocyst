@@ -229,7 +229,7 @@ for prot, entry in Uniprot.items():
      po.asym_units[prot].entity.references.append(ref)
 
 m1 = IMP.Model()
-inf1 = RMF.open_rmf_file_read_only('centroid/cluster.0/cluster_center_model.rmf3')
+inf1 = RMF.open_rmf_file_read_only('../results/models/cluster_center_model.rmf3')
 h1 = IMP.rmf.create_hierarchies(inf1, m1)[0]
 
 for state in h1.get_children():
