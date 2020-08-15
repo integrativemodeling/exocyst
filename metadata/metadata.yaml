@@ -1,6 +1,6 @@
 title: Exocyst Complex
 tags: [chemical crosslinks, EM density map, PMI]
-prereqs: [python/numpy]
+prereqs: [python/numpy, python/scikit]
 accessions: [PDBDEV_00000041]
 pmid: 32239688
 test:
