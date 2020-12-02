@@ -118,13 +118,10 @@ kw.set_id_score_key(None)
 xldb_dss = IMP.pmi.io.crosslink.CrossLinkDataBase(kw)
 xldb_dss.create_set_from_file(datadirectory+'Exo.DSS.csv')
 
-xls_dss = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(root_hier=root_hier,
-                                                                            CrossLinkDataBase=xldb_dss,
-                                                                            length=21,
-                                                                            label="XLS_dss",
-                                                                            resolution=1.0,
-                                                                            slope=0.02)
-
+xls_dss = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
+        root_hier=root_hier, database=xldb_dss,
+        length=21, label="XLS_dss", resolution=1.0, slope=0.02,
+        linker=ihm.cross_linkers.dss)
 
 xls_dss.add_to_model()
 outputobjects.append(xls_dss)
@@ -139,12 +136,11 @@ dof.get_nuisances_from_restraint(xls_dss) # needed to sample the nuisance partic
 xldb_edc= IMP.pmi.io.crosslink.CrossLinkDataBase(kw)
 xldb_edc.create_set_from_file(datadirectory+'Exo.EDC.csv')
 
-xls_edc = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(root_hier=root_hier,
-                                                                            CrossLinkDataBase=xldb_edc,
-                                                                            length=16,
-                                                                            label="XLS_edc",
-                                                                            resolution=1.0,
-                                                                            slope=0.02)
+xls_edc = IMP.pmi.restraints.crosslinking.CrossLinkingMassSpectrometryRestraint(
+        root_hier=root_hier, database=xldb_edc,
+        length=16, label="XLS_edc", resolution=1.0, slope=0.02,
+        linker=ihm.cross_linkers.edc)
+
 xls_edc.add_to_model()
 outputobjects.append(xls_edc)
 dof.get_nuisances_from_restraint(xls_edc)
