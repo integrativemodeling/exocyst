@@ -52,7 +52,7 @@ topology = IMP.pmi.topology.TopologyReader(topology_file,
 bs = IMP.pmi.macros.BuildSystem(m,resolutions=[1])
 
 if '--mmcif' in sys.argv:
-    po = IMP.pmi.mmcif.ProtocolOutput(None)
+    po = IMP.pmi.mmcif.ProtocolOutput()
     bs.system.add_protocol_output(po)
     po.system.title = "Integrative structure and function of the yeast exocyst complex"
     po.system.citations.append(ihm.Citation.from_pubmed_id(32239688))
