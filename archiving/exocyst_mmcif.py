@@ -154,7 +154,6 @@ mc1=IMP.pmi.macros.ReplicaExchange0(m,
                                     root_hier=root_hier,
                                     monte_carlo_sample_objects=dof.get_movers(),
                                     output_objects=outputobjects,
-                                    crosslink_restraints=[xls_dss,xls_edc],    # allows XLs to be drawn in the RMF files
                                     monte_carlo_temperature=1.0,
                                     simulated_annealing=True,
                                     simulated_annealing_minimum_temperature=1.0,
