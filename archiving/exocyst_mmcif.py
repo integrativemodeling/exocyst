@@ -88,9 +88,9 @@ mols = IMP.pmi.tools.get_molecules(root_hier)
 for mol in mols:
     molname=mol.get_name()
     IMP.pmi.tools.display_bonds(mol)
-    cr = IMP.pmi.restraints.stereochemistry.ConnectivityRestraint(mol)
+    cr = IMP.pmi.restraints.stereochemistry.ConnectivityRestraint(
+        mol, label=molname)
     cr.add_to_model()
-    cr.set_label(molname)
     outputobjects.append(cr)
 
 ev = IMP.pmi.restraints.stereochemistry.ExcludedVolumeSphere(
